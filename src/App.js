@@ -52,7 +52,7 @@ function App() {
             size={100}
           />
         ) : (
-          <div className="grid grid-cols-4 gap-4 sm:grid-cols-1 mx-6 md:grid-cols-2">
+          <div className="grid grid-cols-4 gap-4 sm:grid-cols-1 mx-6 md:grid-cols-2 mb-10">
             {employee.map((emp) => (
               <div>
                 <Card key={emp.id} person={emp} updateUser={updateUser} />
