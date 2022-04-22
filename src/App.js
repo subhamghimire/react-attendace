@@ -20,6 +20,7 @@ function App() {
   };
 
   const updateUser = (person, isActive) => {
+    setLoading(true);
     let data = { ...person, active: isActive };
     axios
       .put(
